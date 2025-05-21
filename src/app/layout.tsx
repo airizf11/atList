@@ -1,4 +1,4 @@
-// alis1f/src/app/layout.tsx
+// atlist1f/src/app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -6,7 +6,10 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import AuthInitializer from "@/components/AuthInitializer";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: {
@@ -23,14 +26,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
         <Script id="theme-setter" strategy="beforeInteractive">
           {`
             (function() {
               function getInitialColorMode() {
                 try {
-                  const persistedColorPreference = window.localStorage.getItem('atlist-theme'); // Sesuaikan nama key
+                  const persistedColorPreference = window.localStorage.getItem('atlist-theme');
                   const hasPersistedPreference = typeof persistedColorPreference === 'string';
                   if (hasPersistedPreference) return persistedColorPreference;
                   const mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -49,9 +52,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body
-        className={`${inter.className} bg-ui-background text-ui-foreground flex flex-col min-h-screen antialiased`}
-      >
+      <body className={`flex flex-col min-h-screen antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

@@ -1,5 +1,6 @@
 // tailwind.config.ts
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 import typography from "@tailwindcss/typography";
 import tailwindcssAnimate from "tailwindcss-animate";
 
@@ -13,8 +14,17 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        // lg: '4rem',
+        // xl: '5rem',
+      },
       screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
         "2xl": "1400px",
       },
     },
@@ -53,35 +63,26 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        brand: {
-          blue: {
-            light: "#60a5fa",
-            DEFAULT: "hsl(var(--primary))",
-            dark: "#2563eb",
-          },
-          red: {
-            light: "#fb7185",
-            DEFAULT: "hsl(var(--secondary))",
-            dark: "#e11d48",
-          },
-        },
+        "atlist-blue": "hsl(var(--primary))",
+        "atlist-red": "hsl(var(--secondary))",
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: `var(--radius)`,
+        md: `calc(var(--radius) - 2px)`,
+        sm: `calc(var(--radius) - 4px)`,
       },
+      fontFamily: {
+        sans: ["var(--font-inter)", ...fontFamily.sans],
+        // sans: ['Inter', ...fontFamily.sans],
+      },
+
       keyframes: {
-        "accordion-down": {
-          /* ... */
-        },
-        "accordion-up": {
+        shine: {
           /* ... */
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        shine: "shine 2s linear infinite",
       },
     },
   },
