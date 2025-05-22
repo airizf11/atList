@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import AuthInitializer from "@/components/AuthInitializer";
-import PageProgressBar from "@/components/layout/PageProgressBar";
+// import PageProgressBar from "@/components/layout/PageProgressBar";
 import Script from "next/script";
 
 const inter = Inter({
@@ -62,7 +62,6 @@ export default function RootLayout({
           storageKey="atlist-theme"
         >
           <AuthInitializer />
-          <PageProgressBar />
           <div className="flex-grow">{children}</div>
         </ThemeProvider>
       </body>
