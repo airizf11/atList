@@ -1,4 +1,4 @@
-// alis1f/src/components/landing/HeroClientSection.tsx
+// atlist1f/src/components/landing/HeroClientSection.tsx
 "use client";
 
 import Link from "next/link";

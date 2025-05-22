@@ -1,4 +1,4 @@
-// alis1f/src/app/auth/callback/page.tsx
+// atlist1f/src/app/auth/callback/page.tsx
 "use client";
 
 import { useEffect, Suspense } from "react";

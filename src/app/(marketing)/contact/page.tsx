@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// alis1f/src/app/(marketing)/contact/page.tsx
+// atlist1f/src/app/(marketing)/contact/page.tsx
 "use client";
 
 import type { Metadata } from "next";
@@ -197,17 +197,6 @@ export default function ContactPage() {
               </p>
             </div>
             <dl className="mt-10 space-y-4 text-base leading-7 text-muted-foreground">
-              {/* <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon className="h-7 w-6 text-gray-400" aria-hidden="true" />
-                </dt>
-                <dd>
-                  <a className="hover:text-foreground" href="tel:+1 (555) 234-5678">
-                    +1 (555) 234-5678
-                  </a>
-                </dd>
-              </div> */}
               <div className="flex gap-x-4">
                 <dt className="flex-none">
                   <span className="sr-only">Email</span>

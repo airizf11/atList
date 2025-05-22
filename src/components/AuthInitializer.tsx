@@ -1,4 +1,4 @@
-// alis1f/src/components/AuthInitializer.tsx
+// atlist1f/src/components/AuthInitializer.tsx
 "use client";
 
 import { useEffect, useState } from "react";

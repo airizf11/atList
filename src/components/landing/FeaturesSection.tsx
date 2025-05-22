@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// alis1f/src/components/landing/FeaturesSection.tsx
+// atlist1f/src/components/landing/FeaturesSection.tsx
 import {
   ChatBubbleLeftEllipsisIcon,
   CogIcon,

@@ -1,4 +1,4 @@
-// alis1f/src/components/landing/CallToActionSection.tsx
+// atlist1f/src/components/landing/CallToActionSection.tsx
 import Link from "next/link";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
 

@@ -8,8 +8,8 @@
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     
-    --muted: 220 14.3% 95.8%; /* Abu Muda (bg elemen subtle): hsl(220, 14.3%, 95.8%) - tailwind slate-100 */
-    --muted-foreground: 220 8.9% 46.1%; /* Teks di atas --muted: hsl(220, 8.9%, 46.1%) - tailwind slate-500 */
+    --muted: 220 14.3% 95.8%;
+    --muted-foreground: 220 8.9% 46.1%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 224 71.4% 4.1%;

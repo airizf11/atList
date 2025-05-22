@@ -5,13 +5,13 @@ import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 import SidebarApp from "@/components/layout/SidebarApp";
-// import HeaderApp from '@/components/layout/HeaderApp'; // Opsional, jika butuh header di atas sidebar
+// import HeaderApp from '@/components/layout/HeaderApp'; // Opsional
 
 function AppLoadingScreen() {
   return (
     <div className="flex items-center justify-center h-screen w-screen bg-background">
       <p className="text-xl text-foreground">Loading application...</p>
-      {/* Bisa tambahkan spinner di sini */}
+      {/* Bisa tambah spinner */}
     </div>
   );
 }
@@ -43,7 +43,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
   }
 
   if (!isAuthenticated) {
-    return <AppLoadingScreen />; // Atau tampilkan pesan "Unauthorized"
+    return <AppLoadingScreen />; // Atau "Unauthorized"
   }
 
   return (

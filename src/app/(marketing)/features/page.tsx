@@ -1,4 +1,4 @@
-// alis1f/src/app/(marketing)/features/page.tsx
+// atlist1f/src/app/(marketing)/features/page.tsx
 import type { Metadata } from "next";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
 

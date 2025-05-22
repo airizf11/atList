@@ -1,16 +1,16 @@
-// alis1f/src/components/layout/SidebarApp.tsx
+// atlist1f/src/components/layout/SidebarApp.tsx
 "use client";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  Squares2X2Icon, // Dashboard
-  Cog6ToothIcon, // Settings
-  ChatBubbleLeftRightIcon, // Chat Logging (Placeholder)
-  ShieldCheckIcon, // Moderation (Placeholder)
-  ArrowLeftOnRectangleIcon, // Sign out
-  LifebuoyIcon, // Feedback/Support
-  InformationCircleIcon, // Connections (Placeholder)
+  Squares2X2Icon,
+  Cog6ToothIcon,
+  ChatBubbleLeftRightIcon,
+  ShieldCheckIcon,
+  ArrowLeftOnRectangleIcon,
+  LifebuoyIcon,
+  InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 import { useAuthStore } from "@/store/authStore";
 import Image from "next/image";
@@ -29,7 +29,7 @@ const mainNavItems: NavItem[] = [
     label: "Stream Control",
     icon: ChatBubbleLeftRightIcon,
     disabled: false,
-  }, // Contoh sub-halaman
+  },
   {
     href: "/dashboard/moderation",
     label: "Moderation Rules",
@@ -45,8 +45,8 @@ const accountNavItems: NavItem[] = [
     label: "Connections",
     icon: InformationCircleIcon,
     disabled: true,
-  }, // Placeholder
-  { href: "/feedback", label: "Feedback", icon: LifebuoyIcon, disabled: false }, // Mengarah ke page contact/feedback
+  },
+  { href: "/feedback", label: "Feedback", icon: LifebuoyIcon, disabled: false },
 ];
 
 export default function SidebarApp() {
@@ -85,7 +85,7 @@ export default function SidebarApp() {
                   ? "text-muted-foreground/50 cursor-not-allowed"
                   : pathname === item.href ||
                     (pathname.startsWith(item.href) &&
-                      item.href !== "/dashboard") // Untuk active state sub-halaman
+                      item.href !== "/dashboard")
                   ? "bg-primary/10 text-primary hover:bg-primary/15"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground"
               }

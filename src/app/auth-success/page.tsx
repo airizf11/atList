@@ -1,4 +1,4 @@
-// alis1f/src/app/auth-success/page.tsx
+// atlist1f/src/app/auth-success/page.tsx
 "use client";
 
 import { useEffect } from "react";

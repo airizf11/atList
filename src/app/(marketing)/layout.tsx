@@ -1,4 +1,4 @@
-// alis1f/src/app/(marketing)/layout.tsx
+// atlist1f/src/app/(marketing)/layout.tsx
 import HeaderMarketing from "@/components/layout/HeaderMarketing";
 import FooterMarketing from "@/components/layout/FooterMarketing";
 

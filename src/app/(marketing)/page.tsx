@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// alis1f/src/app/(marketing)/page.tsx
+// atlist1f/src/app/(marketing)/page.tsx
 import Image from "next/image";
 import Link from "next/link";
-
 import HeroClientSection from "@/components/landing/HeroClientSection";
 import FeaturesSection from "@/components/landing/FeaturesSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";

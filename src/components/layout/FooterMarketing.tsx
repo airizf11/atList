@@ -1,4 +1,4 @@
-// alis1f/src/components/Footer.tsx
+// atlist1f/src/components/Footer.tsx
 import Link from "next/link";
 
 export default function Footer() {

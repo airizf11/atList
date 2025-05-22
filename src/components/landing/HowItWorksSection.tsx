@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// alis1f/src/components/landing/HowItWorksSection.tsx
+// atlist1f/src/components/landing/HowItWorksSection.tsx
 import {
   UserPlusIcon,
   LinkIcon,

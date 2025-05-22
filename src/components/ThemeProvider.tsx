@@ -1,4 +1,4 @@
-// alis1f/src/components/ThemeProvider.tsx
+// atlist1f/src/components/ThemeProvider.tsx
 "use client";
 
 import { ThemeProvider as NextThemesProvider } from "next-themes";
