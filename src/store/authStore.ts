@@ -18,6 +18,7 @@ interface AuthState {
   isAuthenticated: boolean;
   isLoading: boolean;
   error: string | null;
+  isMobileSidebarOpen: boolean;
 
   setAuthData: (token: string, profile: UserProfile) => void;
   clearAuthData: () => void;
@@ -26,6 +27,8 @@ interface AuthState {
   initializeAuth: () => Promise<void>;
   setLoading: (loading: boolean) => void;
   setError: (error: string | null) => void;
+  toggleMobileSidebar: () => void;
+  setMobileSidebarOpen: (isOpen: boolean) => void;
 }
 
 const BACKEND_URL =
@@ -39,6 +42,7 @@ export const useAuthStore = create<AuthState>()(
       isAuthenticated: false,
       isLoading: true,
       error: null,
+      isMobileSidebarOpen: false,
 
       setLoading: (loading) => set({ isLoading: loading }),
       setError: (error) => set({ error, isLoading: false }),
@@ -127,6 +131,9 @@ export const useAuthStore = create<AuthState>()(
           console.log("No token found in storage.");
         }
       },
+      toggleMobileSidebar: () =>
+        set((state) => ({ isMobileSidebarOpen: !state.isMobileSidebarOpen })),
+      setMobileSidebarOpen: (isOpen) => set({ isMobileSidebarOpen: isOpen }),
     }),
     {
       name: "alis-auth-storage",

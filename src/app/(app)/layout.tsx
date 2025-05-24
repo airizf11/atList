@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { useAuthStore } from "@/store/authStore";
 import SidebarApp from "@/components/layout/SidebarApp";
-// import HeaderApp from '@/components/layout/HeaderApp'; // Opsional
+import HeaderApp from "@/components/layout/HeaderApp";
 
 function AppLoadingScreen() {
   return (
@@ -24,7 +24,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
     isLoading: authIsLoading,
     userProfile,
   } = useAuthStore();
-
   const [isAuthCheckComplete, setIsAuthCheckComplete] = useState(false);
 
   useEffect(() => {
@@ -37,20 +36,20 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       }
     }
   }, [isAuthenticated, authIsLoading, router, pathname]);
-
   if (!isAuthCheckComplete || (authIsLoading && !userProfile)) {
     return <AppLoadingScreen />;
   }
-
   if (!isAuthenticated) {
     return <AppLoadingScreen />; // Atau "Unauthorized"
   }
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="min-h-screen bg-background">
       <SidebarApp />
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <main className="flex-1 overflow-x-hidden overflow-y-auto bg-muted/40 p-6 md:p-8">
+
+      <div className="md:pl-64 flex flex-col flex-1">
+        <HeaderApp />
+        <main className="flex-1 py-6 md:py-8 px-4 sm:px-6 lg:px-8 bg-muted/30 dark:bg-muted/10">
           {children}
         </main>
       </div>
