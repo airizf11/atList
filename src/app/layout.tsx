@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import AuthInitializer from "@/components/AuthInitializer";
 // import PageProgressBar from "@/components/layout/PageProgressBar";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -61,6 +63,8 @@ export default function RootLayout({
           disableTransitionOnChange
           storageKey="atlist-theme"
         >
+          <Analytics />
+          <SpeedInsights />
           <AuthInitializer />
           <div className="flex-grow">{children}</div>
         </ThemeProvider>

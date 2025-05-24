@@ -11,6 +11,7 @@ import {
   ArrowLeftOnRectangleIcon,
   LifebuoyIcon,
   InformationCircleIcon,
+  PuzzlePieceIcon,
 } from "@heroicons/react/24/outline";
 import { useAuthStore } from "@/store/authStore";
 import Image from "next/image";
@@ -35,7 +36,12 @@ const mainNavItems: NavItem[] = [
     label: "Moderation Rules",
     icon: ShieldCheckIcon,
     disabled: false,
-  }, // Contoh
+  },
+  {
+    href: "/settings/integrations",
+    label: "Integrations",
+    icon: PuzzlePieceIcon,
+  },
 ];
 
 const accountNavItems: NavItem[] = [
