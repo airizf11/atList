@@ -1,4 +1,4 @@
-// alis1f/src/app/(app)/settings/integrations/page.tsx
+// atlist1f/src/app/(app)/settings/integrations/page.tsx
 "use client";
 
 import DiscordWebhookForm from "@/components/settings/DiscordWebhookForm";
@@ -12,9 +12,11 @@ export default function IntegrationsSettingsPage() {
   return (
     <div className="space-y-8">
       <div>
+        {/*
         <h1 className="text-2xl sm:text-3xl font-bold text-foreground">
           Integrations
         </h1>
+        */}
         <p className="mt-1 text-sm text-muted-foreground">
           Connect atList with other services to enhance your workflow.
         </p>

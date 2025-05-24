@@ -19,7 +19,7 @@ function AuthCallbackHandler() {
     async function handleAuth() {
       if (error) {
         console.error("Authentication Error from Backend:", error);
-        setAuthError(`Gagal login: ${error}`);
+        setAuthError(`Error login: ${error}`);
         router.replace("/");
         return;
       }
@@ -30,9 +30,9 @@ function AuthCallbackHandler() {
         const profile = await fetchUserProfile(token);
         if (profile) {
           console.log(
-            "User profile fetched successfully, redirecting to home."
+            "User profile fetched successfully, redirecting to dashboard."
           );
-          router.replace("/");
+          router.replace("/dashboard");
         } else {
           console.error(
             "Failed to fetch profile even with token, redirecting to home."
@@ -41,7 +41,7 @@ function AuthCallbackHandler() {
         }
       } else {
         console.warn("Auth callback called without token or error.");
-        setAuthError("Terjadi kesalahan tak terduga saat proses login.");
+        setAuthError("Something error happens while logging in.");
         router.replace("/");
       }
     }
@@ -52,8 +52,8 @@ function AuthCallbackHandler() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4 text-center">
-      <h1 className="text-xl font-semibold mb-4">Memproses login Anda...</h1>
-      <p className="text-gray-600">Mohon tunggu sebentar.</p>
+      <h1 className="text-xl font-semibold mb-4">Login in progress...</h1>
+      <p className="text-gray-600">Please wait a moment.</p>
       {/* Bisa tambah spinner*/}
     </div>
   );

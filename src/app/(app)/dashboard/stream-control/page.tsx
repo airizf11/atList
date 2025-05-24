@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useAuthStore } from "@/store/authStore";
 import { useStreamControlStore } from "@/store/streamControlStore";
 import StreamControlForm from "@/components/dashboard/StreamControlForm";
+import SendMessageForm from "@/components/dashboard/SendMessageForm";
 
 function CurrentlyMonitoringInfo() {
   const {
@@ -85,6 +86,7 @@ export default function StreamControlPage() {
       <StreamControlForm apiToken={alisApiToken} />
 
       <CurrentlyMonitoringInfo />
+      <SendMessageForm />
     </div>
   );
 }
