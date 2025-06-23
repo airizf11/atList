@@ -20,29 +20,28 @@
     --border: 220 13% 91%;
     --input: 220 13% 91%;
     
-    --primary: 217.2 91.2% 59.8%; /* hsl(217.2, 91.2%, 59.8%) - seperti tailwind blue-500 */
-    --primary-foreground: 210 20% 98%; /* Putih/Abu Terang (teks di atas primary): hsl(210, 20%, 98%) - tailwind slate-50 */
+    --primary: 217.2 91.2% 59.8%;
+    --primary-foreground: 210 20% 98%;
     
-    --secondary: 346.8 77.2% 49.8%; /* hsl(346.8, 77.2%, 49.8%) - seperti tailwind rose-600 */
-    --secondary-foreground: 210 20% 98%; /* Putih/Abu Terang (teks di atas secondary) */
+    --secondary: 346.8 77.2% 49.8%;
+    --secondary-foreground: 210 20% 98%;
 
-    --accent: 220 14.3% 95.8%; /* Warna aksen lain (bisa sama dengan muted atau berbeda) */
-    --accent-foreground: 224 71.4% 4.1%; /* Teks di atas aksen */
-    
-    --destructive: 0 84.2% 60.2%; /* Merah untuk error/destructive actions */
+    --accent: 220 14.3% 95.8%;
+    --accent-foreground: 224 71.4% 4.1%;
+    --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 20% 98%;
     
-    --ring: 217.2 91.2% 59.8%; /* Warna ring untuk focus state (sesuaikan dengan primary) */
+    --ring: 217.2 91.2% 59.8%;
     
-    --radius: 0.5rem; /* Radius default untuk border-radius */
+    --radius: 0.5rem;
   }
 
   .dark {
-    --background: 224 71.4% 4.1%; /* Abu Sangat Gelap */
-    --foreground: 210 20% 98%; /* Putih/Abu Terang */
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
 
-    --muted: 215 27.9% 16.9%; /* Abu Gelap (bg elemen subtle): hsl(215, 27.9%, 16.9%) - tailwind slate-800 */
-    --muted-foreground: 217.9 10.6% 64.9%; /* Teks di atas --muted: hsl(217.9, 10.6%, 64.9%) - tailwind slate-400 */
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
 
     --popover: 224 71.4% 4.1%;
     --popover-foreground: 210 20% 98%;
@@ -50,23 +49,23 @@
     --card: 224 71.4% 4.1%;
     --card-foreground: 210 20% 98%;
 
-    --border: 215 27.9% 16.9%; /* Border Gelap: hsl(215, 27.9%, 16.9%) - tailwind slate-800 (atau slate-700) */
-    --input: 215 27.9% 16.9%; /* Warna input border dark mode */
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
 
-    --primary: 217.2 91.2% 59.8%; /* Tetap menggunakan primary yang sama, atau bisa di-adjust */
-    /* --primary: 217.2 91.2% 69.8%; (Biru sedikit lebih terang) */
-    --primary-foreground: 224 71.4% 4.1%; /* Abu Sangat Gelap (teks di atas primary dark) */
+    --primary: 217.2 91.2% 59.8%;
+    /* --primary: 217.2 91.2% 69.8%; */
+    --primary-foreground: 224 71.4% 4.1%;
 
-    --secondary: 346.8 77.2% 59.8%; /* Rose yang lebih terang: hsl(346.8, 77.2%, 59.8%) */
+    --secondary: 346.8 77.2% 59.8%;
     --secondary-foreground: 210 20% 98%;
 
-    --accent: 215 27.9% 16.9%; /* Warna aksen lain (dark) */
-    --accent-foreground: 210 20% 98%; /* Teks di atas aksen (dark) */
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
     
-    --destructive: 0 62.8% 30.6%; /* Merah destructive yang lebih gelap */
+    --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
     
-    --ring: 217.2 91.2% 59.8%; /* Warna ring untuk focus state (sesuaikan dengan primary dark) */
+    --ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -88,7 +87,7 @@
   }
 }
 
-/* tambahan (opsional) */
+/* opsional */
 @layer utilities {
   .text-balance {
     text-wrap: balance;

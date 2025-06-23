@@ -1,5 +1,5 @@
+// atlist1f/src/store/authStore.ts
 /* eslint-disable @typescript-eslint/no-explicit-any */
-// alis1f/src/store/authStore.ts
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
 

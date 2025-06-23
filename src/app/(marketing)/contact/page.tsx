@@ -1,9 +1,9 @@
+// atlist1f/src/app/(marketing)/contact/page.tsx
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-// atlist1f/src/app/(marketing)/contact/page.tsx
 "use client";
 
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 import { useState, FormEvent, useEffect } from "react";
 import {
   BuildingOffice2Icon,
@@ -45,7 +45,7 @@ export default function ContactPage() {
       setSubmitMessage(
         "Thank you for your message! We will get back to you soon."
       );
-      setFormData({ name: "", email: "", message: "" }); // Reset form
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
       setSubmitError("Sorry, something went wrong. Please try again later.");
     } finally {

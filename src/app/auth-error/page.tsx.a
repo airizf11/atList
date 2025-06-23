@@ -1,4 +1,4 @@
-// alis1f/src/app/auth-error/page.tsx
+// atlist1f/src/app/auth-error/page.tsx
 "use client";
 
 import { useSearchParams } from "next/navigation";

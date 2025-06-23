@@ -36,7 +36,7 @@ export default function Footer() {
         <p className="text-sm text-slate-500 dark:text-slate-400">
           © {currentYear} atList. All rights reserved.
         </p>
-        {/* Bisa tambahkan ikon sosial media atau info lain di sini */}
+        {/* Bisa tambah ikon sosmed or info lain */}
       </div>
     </footer>
   );

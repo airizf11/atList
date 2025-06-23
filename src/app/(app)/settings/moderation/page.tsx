@@ -1,5 +1,5 @@
+// atlist1f/src/app/(app)/settings/moderation/page.tsx
 /* eslint-disable react/no-unescaped-entities */
-// alis1f/src/app/(app)/settings/moderation/page.tsx
 "use client";
 
 import { ShieldExclamationIcon } from "@heroicons/react/24/outline";

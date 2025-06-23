@@ -1,3 +1,4 @@
+// atlist1f/next.config.mjs
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {

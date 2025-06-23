@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // atlist1f/src/components/landing/FeaturesSection.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   ChatBubbleLeftEllipsisIcon,
   CogIcon,
   ShieldCheckIcon,
   ArrowPathIcon,
 } from "@heroicons/react/24/outline";
-import Image from "next/image";
+// import Image from "next/image";
 
 interface Feature {
   icon: React.ElementType;

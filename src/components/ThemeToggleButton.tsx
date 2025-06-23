@@ -1,5 +1,5 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 // atlist1f/src/components/ThemeToggleButton.tsx
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import { useTheme } from "next-themes";

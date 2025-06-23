@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
 // atlist1f/src/app/(app)/dashboard/page.tsx
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { useEffect } from "react";

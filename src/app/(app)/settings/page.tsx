@@ -1,4 +1,4 @@
-// alis1f/src/app/(app)/settings/page.tsx
+// atlist1f/src/app/(app)/settings/page.tsx
 "use client";
 
 import { Cog8ToothIcon } from "@heroicons/react/24/outline";

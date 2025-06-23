@@ -44,8 +44,7 @@ export default function HeaderApp() {
 
         <div className="flex items-center gap-x-4 lg:gap-x-6">
           <ThemeToggleButton />
-          {/* Placeholder untuk user menu jika tidak ada di HeaderMarketing */}
-          {/* Jika user menu mau di sini juga (selain di HeaderMarketing), kita perlu renderAuthSection lagi */}
+          {/* Placeholder user menu jika tidak ada di HeaderMarketing */}
         </div>
       </div>
     </header>
